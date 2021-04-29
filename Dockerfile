@@ -19,6 +19,7 @@ RUN cd ~ && \
   wget https://github.com/alekseyzimin/masurca/releases/download/v4.0.3/MaSuRCA-4.0.3.tar.gz && \
   tar -xvzf MaSuRCA-4.0.3.tar.gz && \
   cd MaSuRCA-4.0.3 && \
+  sed -i 's/ && cp -a ..\/Flye $DEST//' install.sh && \
   ./install.sh
   
 ENV PATH="${PATH}:/root/MaSuRCA-4.0.3/bin"
