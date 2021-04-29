@@ -10,7 +10,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
       g++ \
       zlib1g-dev \
       libbz2-dev \
-      libboost-all-dev \
+      libboost-all-dev && \
     apt-get autoremove && \
     apt-get clean
 
