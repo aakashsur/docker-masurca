@@ -11,7 +11,8 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
       zlib1g-dev \
       libbz2-dev \
       libboost-all-dev \
-      file && \
+      file \
+      numactl && \
     apt-get autoremove && \
     apt-get clean
 
