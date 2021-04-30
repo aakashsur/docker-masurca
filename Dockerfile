@@ -23,7 +23,7 @@ RUN cd ~ && \
   sed -i 's/ && cp -a ..\/Flye $DEST//' install.sh && \
   ./install.sh
   
-ENV ENV LC_ALL=C.UTF-8 \
+ENV LC_ALL=C.UTF-8 \
     LANGUAGE=C.UTF-8 \
     LANG=C.UTF-8 \
     PATH="${PATH}:/root/MaSuRCA-4.0.3/bin"
