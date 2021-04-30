@@ -10,7 +10,8 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
       g++ \
       zlib1g-dev \
       libbz2-dev \
-      libboost-all-dev && \
+      libboost-all-dev \
+      file && \
     apt-get autoremove && \
     apt-get clean
 
@@ -22,4 +23,7 @@ RUN cd ~ && \
   sed -i 's/ && cp -a ..\/Flye $DEST//' install.sh && \
   ./install.sh
   
-ENV PATH="${PATH}:/root/MaSuRCA-4.0.3/bin"
+ENV ENV LC_ALL=C.UTF-8 \
+    LANGUAGE=C.UTF-8 \
+    LANG=C.UTF-8 \
+    PATH="${PATH}:/root/MaSuRCA-4.0.3/bin"
