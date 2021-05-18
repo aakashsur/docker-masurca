@@ -1,6 +1,4 @@
 # docker-masurca
-Docker Image for the Masurca Assembler
-
 ![Build Badge](https://github.com/aakashsur/docker-masurca/actions/workflows/continuous-integration.yml/badge.svg)
 
 # Lachesis in Docker
