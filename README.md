@@ -1,7 +1,5 @@
-# docker-masurca
+# Masurca in Docker
 ![Build Badge](https://github.com/aakashsur/docker-masurca/actions/workflows/continuous-integration.yml/badge.svg)
-
-# Lachesis in Docker
 
 [Masurca](https://github.com/alekseyzimin/masurca) is a popular hybrid genome assembler which is able to combine long read and short read data. Its installation procedure is non-trivial so I created this docker image to circumvent some of the issues I was having. 
 
